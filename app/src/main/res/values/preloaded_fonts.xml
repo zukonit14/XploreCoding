@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allura</item>
+        <item>@font/arbutus_slab</item>
+        <item>@font/creepster</item>
+        <item>@font/new_rocker</item>
+        <item>@font/playball</item>
+        <item>@font/sancreek</item>
+        <item>@font/sarina</item>
+        <item>@font/unlock</item>
+    </array>
+</resources>

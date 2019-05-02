@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xplore1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/js"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/phpfour"
+                android:onClick="js1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/html" />
+
+
+            <Button
+                android:id="@+id/css"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:onClick="css1"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cssx"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toEndOf="@+id/html"
+                app:layout_constraintTop_toBottomOf="@+id/python" />
+
+            <Button
+                android:id="@+id/algo"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/algo"
+                android:onClick="algo1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toEndOf="@+id/ds"
+                app:layout_constraintTop_toBottomOf="@+id/cshar" />
+
+            <Button
+                android:id="@+id/java"
+                android:layout_width="146dp"
+                android:onClick="java1"
+                android:layout_height="161dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/javax"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/c" />
+
+            <Button
+                android:id="@+id/python"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/pythonx"
+                android:onClick="py1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toEndOf="@+id/java"
+                app:layout_constraintTop_toBottomOf="@+id/cpp" />
+
+            <Button
+                android:id="@+id/cshar"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cs"
+                android:onClick="cshar1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintStart_toEndOf="@+id/js"
+                app:layout_constraintTop_toBottomOf="@+id/css" />
+
+            <Button
+                android:id="@+id/cpp"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cppx"
+                android:onClick="cpp1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toEndOf="@+id/c"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/c"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/cx"
+                android:onClick="c1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/html"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/htmlx"
+                android:onClick="html1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/java"
+                tools:clickable="false" />
+
+            <Button
+                android:id="@+id/ds"
+                android:layout_width="146dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ds"
+                android:onClick="ds1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
